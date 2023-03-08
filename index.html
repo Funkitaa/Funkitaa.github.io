@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="CV.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">  
+    <link rel="icon" type="image/x-icon" href=file:///C:/Users/Funkapolis/Desktop/PROYECTO%20FINAL%20OK/favicon%20CV.ico>  
+</head>  
+<body>  
+     
+    <header>  
+        <nav class="barra-nav">  
+            <ul class="menu">  
+                <li class="item-menu">  
+                    <a href="#perfil" class="menu-link nav-link">Perfil</a></li > 
+                <li class="item-menu">  
+                    <a href="#experiencia" class="menu-link nav-link">Experiencia</a></li>  
+                <li class="item-menu">  
+                    <a href="#contac" class="menu-link nav-link">Contacto</a></li>  
+            </ul>  
+        </nav>  
+  
+         
+    </header>  
+    
+    <section class="foto"> 
+        <img class="foto" src="https://randomuser.me/api/portraits/women/30.jpg" alt="Mi foto de CV"> 
+    </section> 
+ 
+    <div class="principal-div"> 
+ 
+        <section class="datos" id="perfil"> 
+         
+           <h2>Anaïs Pierre</h2>  
+           
+            <p id="perfil-parraf">Tengo 36 años, soy de Francia, hace 15 años vivo en Argentina. 
+                Soy profesora de Frances hace 8 años dando clases a niños y adultos. 
+ 
+        </section> 
+ 
+        <section class="exp" id="experiencia"> 
+          <h2>Experiencia Laboral</h2> 
+ 
+          <ul> 
+            <li>Profesora de idoma Frances en escuela "Lenguas Vivas" por 5 años</li> 
+            <li>Profesora de idioma Frances en escuela "CUI" por 3 años</li> 
+          </ul> 
+             
+           
+        </section> 
+ 
+        <section class="contacto" id="contac"> 
+            <h3>Contacto</h3>  
+              
+            <p id="telinfo"></p> 
+             
+            <button type="button" id="tel">Ver Telefono</button> 
+             
+            <p id="email"></p> 
+            
+            <button type="button" id="mail">Ver E-Mail</button> 
+            
+        </section> 
+    
+             
+         
+        
+    </div> 
+       
+ 
+ <script src="proyecto.js"></script>" 
+ 
+ <script> 
+    fetch('https://randomuser.me/api/?seed=3bc0d153ee796bf4') 
+        .then(response => response.json()) 
+        .then(data => console.log(data));  
+ 
+    </script> 
+</body> 
+</html> 
+ 
